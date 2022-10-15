@@ -1,0 +1,159 @@
+.auth-hold{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    .auth-col-one{
+        width: 50%;
+        text-align: center;
+        background: rgb(255,93,0);
+        background: linear-gradient(90deg, rgba(255,93,0,1) 18%, rgba(255,93,0,1) 43%, rgba(255,93,0,0.6898109585631127) 72%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        .quote{
+            padding: 4rem 0 2rem 0;
+            font-weight: 700;
+            font-size: 2rem;
+        }
+        .company-logo{
+            max-width: 4rem !important;
+            max-height: 4rem !important;
+            padding: 2rem 0;
+        }
+        .description{
+            padding: 3rem 6rem;
+            font-size: 1rem;
+        }
+        .copywrite{
+             padding-bottom: 2rem;
+        }
+    }
+    .auth-col-two{
+        width: 50%;
+        color: black;
+        padding: 2rem 2rem 6rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        .row-one{
+            align-self: flex-end;
+            color: #ff725e;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+        }
+        .row-two{
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .row-two-title{
+                font-size: 2rem;
+                font-weight: 500;
+                padding: 3rem 0;
+            }
+            .auth-input-hold{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .auth-input{
+                    padding: 0.7rem 1rem;
+                    width: 100%;
+                    margin: 1px solid #ff725e;
+                    border: 1px solid darkgray;
+                    border-radius: 30px;
+                }
+                .auth-label{
+                padding: 0.9rem 0 0.7rem 1rem;
+                align-self: flex-start;
+                  text-align: left;
+                }
+            }
+            .submit-btn{
+                width: 100%;
+                border-radius: 30px;
+                color: white;
+                background-color: #ff725e;
+                padding: 0.7rem;
+            }
+            .auth-links{
+                width: 100%;
+                padding: 2rem 1rem;
+                display: flex;
+                justify-content: space-between;
+                .checkbox-hold{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    input{
+                        background-color: #ff725e;
+                        border: 1px solid gray;
+                    }
+                }
+                .forgot-password{
+                    color: darkgray;
+                    cursor: pointer;
+                }
+            }
+        }
+        .row-three{
+            background-color: #ff725e;
+        }
+    }
+}
+
+@media (max-width: 1100px){
+    .auth-hold{
+        flex-direction: column;
+        .auth-col-one{
+            background: rgb(255,93,0);
+            background: linear-gradient(180deg, rgba(255,93,0,1) 18%, rgba(255,93,0,1) 43%, rgba(255,93,0,1) 72%, rgba(255,93,0,0.006337569207370497) 100%);
+            width: 100%;
+            padding-bottom: 4rem;
+            .description{
+                display: none;
+            }
+        }
+        .auth-col-two{
+            width: 100%;
+            justify-content: space-evenly;
+            .row-two{
+                .row-two-title{
+                    padding: 2rem 0 3rem 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px){
+    .auth-hold{
+        font-size: 70%;
+        .auth-col-one{
+            padding-bottom: 2rem;
+            .quote{
+                padding: 2rem;
+            }
+        }
+        .auth-col-two{
+            padding: 2rem;
+            .row-two{
+                width: 90%;
+                .auth-input-hold{
+                    .auth-input{
+                        padding: 0.5rem 1rem;
+                    }
+                }
+                .submit-btn{
+                    padding: 0.5rem 1rem;
+                }
+            }
+        }
+    }
+}
